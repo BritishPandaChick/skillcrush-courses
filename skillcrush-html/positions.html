@@ -1,34 +1,49 @@
-<style>
-#first-div {
-	border: 1px solid #4593FE;
-	position: static;
-	margin-bottom: 200px;
-}
-#second-div {
-	background: #09CDA1;
-	position: relative;
-	top: 20px;
-	left: 50px;
-	width: 200px;
-	height: 200px;
-}
-#third-div {
-	background: #FF605F;
-	position: absolute;
-	left: 30px;
-	top: 240px;
-}
-#fourth-div {
-	background: #ffb83d;
-	width: 100px;
-	position: fixed;
-	top: 100px;
-	left: 200px;
-}
-</style>
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Positioning</title>
+	</head>
+	<body>
+		<div id="first-div">This first div has a static position.
+			<div id="second-div">This second div has a relative position. With a top 20px
+				down and 50 px left, from it's parent the first div.</div>
+		</div>
+		<div id="third-div">This third div has an absolute position, with a top of
+			240px and left 30px.</div>
+		<div id="fourth-div">This fourth div has a fixed position, with a top of 100px
+			and left 200px. Notice that if you scroll, this div stays in place.</div>
 
-<div id="first-div">This first div has a static position.
-	<div id="second-div">This second div has a relative position. With a top 20px down and 50 px left, from it's parent the first div.</div>
-</div>
-<div id="third-div">This third div has an absolute position, with a top of 240px and left 30px.</div>
-<div id="fourth-div">This fourth div has a fixed position, with a top of 100px and left 200px. Notice that if you scroll, this div stays in place.</div>
+		<style>
+			#first-div {
+				border: 1px solid #4593FE;
+				position: static;
+				margin-bottom: 200px;
+			}
+
+			#second-div {
+				background: #09CDA1;
+				position: relative;
+				top: 20px;
+				left: 50px;
+				width: 200px;
+				height: 200px;
+			}
+
+			#third-div {
+				background: #FF605F;
+				position: absolute;
+				left: 30px;
+				top: 240px;
+			}
+
+			#fourth-div {
+				background: #ffb83d;
+				width: 100px;
+				position: fixed;
+				top: 100px;
+				left: 200px;
+			}
+		</style>
+	</body>
+</html>
