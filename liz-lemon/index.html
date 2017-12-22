@@ -1,1 +1,79 @@
-<!DOCTYPE><html>  <head>    <meta charset="utf-8">    <title>Liz Lemon Personal Website</title>    <link rel="stylesheet" href="style.css">    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>    <!--jQuery plugin Flexslider-->    <link rel="stylesheet" href="http://skillcrush.com/wp-content/themes/skillcrush2.30/class-files/anything-slider/css/anythingslider.css">    <script type="text/javascript" src="http://skillcrush.com/wp-content/themes/skillcrush2.30/class-files/anything-slider/js/jquery.anythingslider.min.js"></script>    <script>      $(function(){        $('#slider').anythingSlider({          mode: "horiz",          expand: false,          resizeContents: true,          buildArrows: true,          toggleArrows: true,          startText: "Start",          stopText: "Stop",          clickForwardArrow: "click",          clickBack: "click",        });      });    </script>  </head>  <body>    <div class="page">      <header>        <h1>Liz Lemon's Personal Website</h1>        <img id="headshot" src="images/liz-lemon.png" alt="headshot" />      </header>      <h4>The current time is ...<span id="clock">Clock goes here</span></h4>      <blockquote id="greeting">This is where the JavaScript greeting goes ...</blockquote>      <section id="bio">        <h2>About me</h2>        <p>Here is a paragraph all about how awesome I am. Don't you <em>love</em>          to read about me? Hmm, not so much? Well, then replace this paragraph          with some information about <strong>yourself</strong>! Or you can go          read some fun articles on <a href="http://www.skillcrush.com"          alt="skillcrush.com">Skillcrush</a>.</p>      </section>      <!--Anythingslider Div Markup-->      <ul id="slider">        <li><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4OTgyMTA1Nl5BMl5BanBnXkFtZTYwMDM3Mjg3._V1_.jpg" alt="liz-sitting-pic" /></li>        <li><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTMwMTMwODg4MF5BMl5BanBnXkFtZTcwNjQ0NTU2MQ@@._V1_.jpg" alt="liz-face-pic" /></li>        <li><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3MTU2NjMwMV5BMl5BanBnXkFtZTcwOTczNjEwMg@@._V1_.jpg" alt="liz-plane-pic" /></li>      </ul>      <section id="contact">        <h2>Contact</h2>        <div id="social-icons">          <a href="#"><img src="images/twitter.png" alt="Twitter icon"></a>        </div>      </section>      <button id="modal-show">Join the Lemon List</button>      <div id="modal-container">        <section id="modal-box">          <button id="modal-hide">x</button>          <h2 id="newsleter-header">Sign up for my email list!</h2>          <form id="newsletter-signup" action="#" method="post" accept-charset="utf-8">            <input type="email" name="email" value="" placeholder="Your email">            <input type="submit" value="Sign up">          </form>        </section>      </div>      <footer>        <p>&copy; Skillcrush 2014</p>      </footer>    </div>    <script> type="text/javascript" src="script.js"></script>  </body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Liz Lemon Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+    <!--jQuery plugin Flexslider-->
+    <link rel="stylesheet" href="http://skillcrush.com/wp-content/themes/skillcrush2.30/class-files/anything-slider/css/anythingslider.css">
+    <script type="text/javascript" src="http://skillcrush.com/wp-content/themes/skillcrush2.30/class-files/anything-slider/js/jquery.anythingslider.min.js"></script>
+    <script>
+      $(function(){
+        $('#slider').anythingSlider({
+          mode: "horiz",
+          expand: false,
+          resizeContents: true,
+          buildArrows: true,
+          toggleArrows: true,
+          startText: "Start",
+          stopText: "Stop",
+          clickForwardArrow: "click",
+          clickBack: "click",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Liz Lemon's Personal Website</h1>
+        <img id="headshot" src="img/liz-lemon.png" alt="headshot" />
+      </header>
+
+      <h4>The current time is ...<span id="clock">Clock goes here</span></h4>
+      <blockquote id="greeting">This is where the JavaScript greeting goes ...</blockquote>
+
+      <section id="bio">
+        <h2>About me</h2>
+        <p>Here is a paragraph all about how awesome I am. Don't you <em>love</em>
+        to read about me? Hmm, not so much? Well, then replace this paragraph
+        with some information about <strong>yourself</strong>! Or you can go
+        read some fun articles on <a href="http://www.skillcrush.com"
+        alt="skillcrush.com">Skillcrush</a>.</p>
+      </section>
+      <!--Anythingslider Div Markup-->
+      <ul id="slider">
+        <li><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4OTgyMTA1Nl5BMl5BanBnXkFtZTYwMDM3Mjg3._V1_.jpg" alt="liz-sitting-pic" /></li>
+        <li><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTMwMTMwODg4MF5BMl5BanBnXkFtZTcwNjQ0NTU2MQ@@._V1_.jpg" alt="liz-face-pic" /></li>
+        <li><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3MTU2NjMwMV5BMl5BanBnXkFtZTcwOTczNjEwMg@@._V1_.jpg" alt="liz-plane-pic" /></li>
+      </ul>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div id="social-icons">
+           <a href="#"><img src="img/twitter.png" alt="Twitter icon"></a>
+         </div>
+      </section>
+
+      <button id="modal-show">Join the Lemon List</button>
+      <div id="modal-container">
+        <section id="modal-box">
+          <button id="modal-hide">x</button>
+          <h2 id="newsleter-header">Sign up for my email list!</h2>
+          <form id="newsletter-signup" action="#" method="post" accept-charset="utf-8">
+            <input type="email" name="email" value="" placeholder="Your email">
+            <input type="submit" value="Sign up">
+          </form>
+        </section>
+      </div>
+      <footer>
+        <p>&copy; Skillcrush 2014</p>
+      </footer>
+    </div>
+    <script> type="text/javascript" src="script.js"></script>
+  </body>
+</html>
