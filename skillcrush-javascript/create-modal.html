@@ -1,1 +1,37 @@
-<!DOCTYPE><html>  <head>    <meta charset="utf-8">    <meta name="description" content="Skillcrush 102-Create Your Own Modal" />    <title>Create Your Own Modal</title>  </head>  <body>    <button id="modal-show-button">Show the modal</button>    <div id="my-modal">      <h1>This is our fancy modal.</h1>      <button id="modal-hide-button">Hide the modal</button>    </div>    <style>      #my-modal {        display: none;      }    </style>    <script>      var showButton = document.getElementById("modal-show-button");      var hideButton = document.getElementById("modal-hide-button");      showButton.addEventListener("click", showModal);      hideButton.addEventListener("click", hideModal);      var modal = document.getElementById("my-modal");      function showModal() {        modal.style.display = 'block';      }      function hideModal() {        modal.style.display = 'none';      }    </script>  </body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Skillcrush 102-Create Your Own Modal" />
+    <title>Create Your Own Modal</title>
+  </head>
+  <body>
+    <button id="modal-show-button">Show the modal</button>
+    <div id="my-modal">
+      <h1>This is our fancy modal.</h1>
+      <button id="modal-hide-button">Hide the modal</button>
+    </div>
+
+    <style>
+      #my-modal {
+        display: none;
+      }
+    </style>
+
+    <script>
+      var showButton = document.getElementById("modal-show-button");
+      var hideButton = document.getElementById("modal-hide-button");
+      showButton.addEventListener("click", showModal);
+      hideButton.addEventListener("click", hideModal);
+      var modal = document.getElementById("my-modal");
+
+      function showModal() {
+        modal.style.display = 'block';
+      }
+
+      function hideModal() {
+        modal.style.display = 'none';
+      }
+   </script>  
+  </body>
+</html>
