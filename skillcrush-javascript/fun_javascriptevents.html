@@ -1,1 +1,76 @@
-<!DOCTYPE><html>  <head>    <meta charset="utf-8">    <meta name="description" content="Skillcrush 102-Fun with JavaScript Events" />    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>    <title>Fun with JavaScript Events</title>  </head>  <body>    <h1>Happy Holidays!</h1>    <h2>Click button for the surprise!</h2>    <div id="my-button">      <button id="my-button">Surprise!</button><br/>      <div id="gingerbread">        <img src="http://kawaii.kawaii.at/img/polymer-clay-gingerbread-man-1_big.jpg" />      </div>      <div id="Thanks">        <p>Thanks to all my fans on social media and my blog. Hope you have a safe          and happy holidays!</p>      </div>    </div>    <style>      h1 {        font-family: 'Lobster Two', cursive;        text-align: left;        color: red;        font-size: 50px;        margin-left: 155px;        width: 500px;        height: 45px;      }      h2 {        font-family: 'Lobster Two', cursive;        text-align: center;        color: green;        font-size: 25px;        width: 300px;        margin-left: 165px;        height: 45px;      }      #my-button {        text-align: center;        margin-left: 149px;        height: 25px;      }      #gingerbread {        margin-top: 25px;        margin-left: 15px;      }      #Thanks {        font-family: Arial;        width: 150px;        margin-left: 155px;        display: none;      }    </style>    <script>      var button = document.getElementById("my-button");      button.addEventListener("click", showThanks, false);      var gingerbread = document.getElementById("my-button");      button.addEventListener('dblclick', Alert, false);      function showThanks() {        var info = document.getElementById("Thanks");        info.style.display = "block";      }      function Alert(){        alert("Like BritishPandaChick!");      }    </script>  </body></html>
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Skillcrush 102-Fun with JavaScript Events" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+    <title>Fun with JavaScript Events</title>
+  </head>
+  <body>
+    <h1>Happy Holidays!</h1>
+    <h2>Click button for the surprise!</h2>
+    <div id="my-button">
+      <button id="my-button">Surprise!</button><br/>
+      <div id="gingerbread">
+        <img src="http://kawaii.kawaii.at/img/polymer-clay-gingerbread-man-1_big.jpg" />
+      </div>
+      <div id="Thanks">
+        <p>Thanks to all my fans on social media and my blog. Hope you have a safe
+          and happy holidays!</p>
+      </div>
+    </div>
+    <style>
+      h1 {
+       font-family: 'Lobster Two', cursive;
+       text-align: left;
+       color: red;
+       font-size: 50px;
+       margin-left: 155px;
+       width: 500px;
+       height: 45px;
+     }
+
+     h2 {
+       font-family: 'Lobster Two', cursive;
+       text-align: center;
+       color: green;
+       font-size: 25px;
+       width: 300px;
+       margin-left: 165px;
+       height: 45px;
+     }
+
+     #my-button {
+       text-align: center;
+       margin-left: 149px;
+       height: 25px;
+     }
+
+    #gingerbread {
+      margin-top: 25px;
+      margin-left: 15px;
+    }
+
+    #Thanks {
+      font-family: Arial;
+      width: 150px;
+      margin-left: 155px;
+      display: none;
+    }
+  </style>
+  <script>
+    var button = document.getElementById("my-button");
+    button.addEventListener("click", showThanks, false);
+    var gingerbread = document.getElementById("my-button");
+    button.addEventListener('dblclick', Alert, false);
+    function showThanks() {
+      var info = document.getElementById("Thanks");
+        info.style.display = "block";
+      }
+
+      function Alert(){
+        alert("Like BritishPandaChick!");
+      }
+    </script>
+  </body>
+</html>

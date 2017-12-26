@@ -1,1 +1,62 @@
-<!DOCTYPE><html>  <head>    <meta charset="utf-8">    <meta name="description" content="Skillcrush 102-Event Sandbox" />    <title>Event Sandbox</title>  </head>  <body>    <h1 id="title">Event Sandbox</h1>    <p id="instructions">Play with all the events!</p>    <label id="question" for="question">What is two plus two?</label>    <input id="answer" name="answer" type="number">    <ul>      <li><code>click</code</li>      <li><code>keyup</code></li>      <li><code>DOMContentLoaded</code></li>      <li><code>scroll</code></li>      <li><code>blur</code></li>    </ul>    <hr>    <h2>Notification</h2>    <ol id="notifications">    </ol>    <script>      var notify = function(message) {        var notifications = document.getElementById("notifications");        var newNotification = document.createElement("li");        newNotification.innerText = message;        notifications.appendChild(newNotification);      };      document.addEventListener("dblclick", function(evt) {        var targetElem = evt.target.tagName;        notify("Clicked on a " + String(targetElem) + " element");      });      document.addEventListener("keydown", function(evt) {        if (evt.keyCode === 71) {          notify("Pressed the G key");        }      });      document.addEventListener("DOMContentLoaded", function(evt) {        notify("The DOM has been loaded.");      });      document.addEventListener("mouseup", function(evt) {        notify("You've been scrolled");      });      var answerInput = document.getElementById("answer");      answerInput.addEventListener("blur", function(evt){        var answerNumber = parseInt(answerInput.value);        if (answerNumber === 4) {          notify("Yay you got the right answer!");        } else {          notify("is that your final answer?");        }      });    </script>  </body></html>
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Skillcrush 102-Event Sandbox" />
+    <title>Event Sandbox</title>
+  </head>
+  <body>
+    <h1 id="title">Event Sandbox</h1>
+    <p id="instructions">Play with all the events!</p>
+    <label id="question" for="question">What is two plus two?</label>
+    <input id="answer" name="answer" type="number">
+    <ul>
+      <li><code>click</code</li>
+      <li><code>keyup</code></li>
+      <li><code>DOMContentLoaded</code></li>
+      <li><code>scroll</code></li>
+      <li><code>blur</code></li>
+    </ul>
+    <hr>
+    <h2>Notification</h2>
+    <ol id="notifications"></ol>
+
+    <script>
+      var notify = function(message) {
+        var notifications = document.getElementById("notifications");
+        var newNotification = document.createElement("li");
+        newNotification.innerText = message;
+        notifications.appendChild(newNotification);
+      };
+
+      document.addEventListener("dblclick", function(evt) {
+        var targetElem = evt.target.tagName;
+        notify("Clicked on a " + String(targetElem) + " element");
+      });
+
+      document.addEventListener("keydown", function(evt) {
+        if (evt.keyCode === 71) {
+          notify("Pressed the G key");
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function(evt) {
+        notify("The DOM has been loaded.");
+      });
+
+      document.addEventListener("mouseup", function(evt) {
+        notify("You've been scrolled");
+      });
+
+      var answerInput = document.getElementById("answer");
+      answerInput.addEventListener("blur", function(evt){
+        var answerNumber = parseInt(answerInput.value);
+        if (answerNumber === 4) {
+          notify("Yay you got the right answer!");
+        } else {
+          notify("is that your final answer?");
+        }
+      });
+    </script>
+  </body>
+</html>
