@@ -1,1 +1,59 @@
-<!DOCTYPE><html>  <head>    <meta charset="utf-8">    <meta name="viewport" content="width=device-width">    <title>JS Bin</title>  </head>  <body>    <h3>Eat Simply</h3>    <p>Instead of being overly concerned with counting calories or measuring      portion sizes, think of your diet in terms of color, variety, and freshness.      This way it should be easier to make healthy choices.</p>    <p>Focus on finding foods you love and easy recipes that incorporate a few      fresh ingredients. Gradually, your diet will become healthier and more      delicious.</p>    <h3>Make Changes Slowly</h3>    <p>Trying to make your diet healthy overnight isn't realistic or smart. Changing      everything at once usually leads to cheating or giving up on your new eating      plan. Make small steps, like adding a salad (full of different color vegetables)      to your diet once a day or switching from butter to olive oil when cooking.</p>    <p>As yours small changes become habit, you can continue to add more healthy      choices to your diet.</p>    <script>      $('body p').each(function(key, value) {        $(this).delay(key * 1000).fadeIn(2000);      });      var meals = {        breakfast: {          foot: 'eggs & toast',          drink: 'coffee'        },        lunch: {          food: 'salad & crackers',          drink: 'water'        },        snack: {          food: 'apple & peanut butter'        },        dinner: {          food: 'steak & potatoes',          drink: 'red wine'        }      };      var list = '<ul>';      $.each(meals, function(key, value){        list = list + '<li>' + key + '<ul>';        $.each(value, function(key2, value2){          list = list + '<li>' + value2 + ': ' + '</li>';        });        list = list + '</ul></li>';      });      list = list + '</ul>';      $('body').append('<h3>My Meals Today</h3>' + list);    </script>  </body></html>
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+  </head>
+  <body>
+    <h3>Eat Simply</h3>
+    <p>Instead of being overly concerned with counting calories or measuring
+      portion sizes, think of your diet in terms of color, variety, and freshness.
+      This way it should be easier to make healthy choices.</p>
+    <p>Focus on finding foods you love and easy recipes that incorporate a few
+      fresh ingredients. Gradually, your diet will become healthier and more
+      delicious.</p>
+    <h3>Make Changes Slowly</h3>
+    <p>Trying to make your diet healthy overnight isn't realistic or smart. Changing
+      everything at once usually leads to cheating or giving up on your new eating
+      plan. Make small steps, like adding a salad (full of different color vegetables)
+      to your diet once a day or switching from butter to olive oil when cooking.</p>
+    <p>As yours small changes become habit, you can continue to add more healthy
+      choices to your diet.</p>
+
+    <script>
+      $('body p').each(function(key, value) {
+        $(this).delay(key * 1000).fadeIn(2000);
+      });
+
+      var meals = {
+        breakfast: {
+          food: 'eggs & toast',
+          drink: 'coffee'
+        },
+        lunch: {
+          food: 'salad & crackers',
+          drink: 'water'
+        },
+        snack: {
+          food: 'apple & peanut butter'
+        },
+        dinner: {
+          food: 'steak & potatoes',
+          drink: 'red wine'
+        }
+      };
+
+      var list = '<ul>';
+      $.each(meals, function(key, value){
+        list = list + '<li>' + key + '<ul>';
+        $.each(value, function(key2, value2){
+          list = list + '<li>' + value2 + ': ' + '</li>';
+        });
+        list = list + '</ul></li>';
+      });
+      list = list + '</ul>';
+      $('body').append('<h3>My Meals Today</h3>' + list);
+    </script>
+  </body>
+</html>
