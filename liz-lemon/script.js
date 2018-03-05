@@ -36,12 +36,14 @@ $(document).ready(function(){
 
   var newsletterForm = $("#newsletter-signup");
   newsletterForm.on("submit", handleNewsletterSignup);
+  
   /* Begin the clock code */
   var clockTime = function() {
     var currentTime = new Date();
     var hours = currentTime.getHours();
     var minutes = currentTime.getMinutes();
     var seconds = currentTime.getSeconds();
+
     if (hours <= 11) {
       var period = "AM";
     } else {
