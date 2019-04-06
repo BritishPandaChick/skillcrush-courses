@@ -1,0 +1,84 @@
+body {
+	background: powderblue;
+}
+
+
+header {
+    background: url('http://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/03/seamless-pattern-green-150.png');
+    margin: 10px;
+    padding: 20px;
+}
+
+
+ main {
+    border: 2px solid #DA70D6;
+}
+
+
+.main-section {
+    color: red;
+    font-size: 28px;
+    font-family: 'Wisdom Script AI';
+}
+
+
+h1 {
+    color: #2F4F4F;
+    font-family: Arial;
+    font-size: 55px;
+}
+
+
+section {
+    height: 300px;
+    background: yellow;
+}
+
+
+.section-one {
+    float: right;
+}
+
+
+#section1-headline {
+    background: #556B2F;
+    font-size: 35px;
+    font-family: 'Bitter', serif;
+    color: #F8F8FF;
+}
+
+
+ol li {
+    font-size: 15px;
+    font-family: Georgia;
+}
+
+
+ul {
+    border: 2px orange dashed;
+}
+
+
+ul li {
+    font-size: 15px;
+    font-family: 'Bitter', serif;
+}
+
+
+ p {
+    font-family: 'Wisdom Script AI';
+    font-size: 20px;
+}
+
+
+h3 {
+    font-size: 25px;
+    font-family: 'Bitter', serif;
+    color: SeaGreen;
+}
+
+
+footer {
+    width: 500px;
+    background-color: #FFFFFF;
+}
