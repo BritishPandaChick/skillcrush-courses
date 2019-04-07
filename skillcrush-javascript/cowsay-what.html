@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Skillcrush 102 - CowSay What?" />
-    <title>CowSay What?</title>
-  </head>
-  <body>
-    <h1>CowSay What?</h1>
-    <button id="cowsay-run">Say it, cow!</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Skillcrush 102 - CowSay What?" />
+    <title>CowSay What?</title>
+  </head>
+  <body>
+    <h1>CowSay What?</h1>
+    <button id="cowsay-run">Say it, cow!</button>
     <pre>      ----------------------------------------
       <span id="cowsay-output"></span>
       ----------------------------------------
@@ -16,21 +16,21 @@
          (__)\    )\/\
               ||----w |
               ||     ||
-    </pre>
-    <script>
-      var cowsayRun = document.getElementById("cowsay-run");
-      var cowsayOutput = document.getElementById("cowsay-output");
-      cowsayRun.addEventListener("click", function(input) {
-        var inputText = prompt("What should the cow say?");
-        var lastCharacter = inputText.charAt(inputText.length - 1);
-        if (lastCharacter === "?") {
-          cowsayOutput.innerText = "moo I don't know.";
-        } else if (lastCharacter === "!") {
-          cowsayOutput.innerText = "MOO MOO MOO!";
-        } else {
-          cowsayOutput.innerText = "moo..." + inputText + "moo...";
-        }
-      });
-    </script>
-  </body>
+    </pre>
+    <script>
+      var cowsayRun = document.getElementById("cowsay-run");
+      var cowsayOutput = document.getElementById("cowsay-output");
+      cowsayRun.addEventListener("click", function(input) {
+        var inputText = prompt("What should the cow say?");
+        var lastCharacter = inputText.charAt(inputText.length - 1);
+        if (lastCharacter === "?") {
+          cowsayOutput.innerText = "moo I don't know.";
+        } else if (lastCharacter === "!") {
+          cowsayOutput.innerText = "MOO MOO MOO!";
+        } else {
+          cowsayOutput.innerText = "moo..." + inputText + "moo...";
+        }
+      });
+    </script>
+  </body>
 </html>

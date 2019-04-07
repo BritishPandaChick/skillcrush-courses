@@ -1,22 +1,22 @@
-<!DOCTYPE>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Skillcrush 102-Age as a function" />
-    <title>Age as a Function</title>
-  </head>
-  <body>
-    <script>
-      var birthYear = prompt("What is your birth year?");
-      var name = prompt("What is your name?");
-      var age = getAge(birthYear);
-      alert("Hi " + name + ", your age is " + age + " (more or less) years old!");
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Skillcrush 102-Age as a function" />
+    <title>Age as a Function</title>
+  </head>
+  <body>
+    <script>
+      var birthYear = prompt("What is your birth year?");
+      var name = prompt("What is your name?");
+      var age = getAge(birthYear);
+      alert("Hi " + name + ", your age is " + age + " (more or less) years old!");
            
-      function getAge(birthYear) {
-        var date = new Date();
-        var currentyear = date.getFullYear();
-        return currentYear - birthYear;
-      }
-    </script>
-  </body>
+      function getAge(birthYear) {
+        var date = new Date();
+        var currentyear = date.getFullYear();
+        return currentYear - birthYear;
+      }
+    </script>
+  </body>
 </html>

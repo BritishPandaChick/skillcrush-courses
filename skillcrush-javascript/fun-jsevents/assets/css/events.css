@@ -1,0 +1,37 @@
+h1 {
+	font-family: 'Lobster Two', cursive;
+    text-align: left;
+    color: red;
+    font-size: 50px;
+    margin-left: 155px;
+    width: 500px;
+    height: 45px;
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    color: green;
+    font-size: 25px;
+	width: 300px;
+    margin-left: 165px;
+    height: 45px;
+}
+
+#my-button {
+    text-align: center;
+    margin-left: 149px;
+    height: 25px;
+}
+
+#gingerbread {
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+#Thanks {
+    font-family: Arial;
+    width: 150px;
+    margin-left: 155px;
+    display: none;
+}

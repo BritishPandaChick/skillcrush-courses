@@ -1,43 +1,29 @@
-<!DOCTYPE>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Skillcrush 102-Use .hover() to create a tooltip" />
-    <title>Use .hover() to Create a Tooltip</title>
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-  </head>
-  <body>
-    <a href="#" id="my-link" title="Woot! You wrote your first hover event!">Hover
-      over me!</a>
-    <div id="my-link-tooltip"></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Skillcrush 102-Use .hover() to create a tooltip" />
+    <title>Use .hover() to Create a Tooltip</title>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>	<style>      .tooltip {        margin: 10px;        padding: 10px;        -webkit-border-radius: 3px;        -moz-border-radius: 3px;        border-radius: 3px;        color: white;        background-color: black;        position: absolute;        z-index: 2;      }    </style>
+  </head>
+  <body>
+    <a href="#" id="my-link" title="Woot! You wrote your first hover event!">Hover
+      over me!</a>
+    <div id="my-link-tooltip"></div>
 
-    <style>
-      .tooltip {
-        margin: 10px;
-        padding: 10px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        color: white;
-        background-color: black;
-        position: absolute;
-        z-index: 2;
-      }
-    </style>
+    <script>
+      $(document).ready(function(){
+        $('#my-link').click(function(event){
+          event.preventDefault();
+        });
 
-    <script>
-      $(document).ready(function(){
-        $('#my-link').click(function(event){
-          event.preventDefault();
-        });
-
-        $('#my-link').hover(function(){
-          var content = $(this).attr('title');
-          $('div#my-link-tooltip').addClass('tooltip').text(content);
-        }, function(){
-          $('div#-my-link-tooltip').removeClass('tooltip').empty();
-        });
-      });
-    </script>
-  </body>
+        $('#my-link').hover(function(){
+          var content = $(this).attr('title');
+          $('div#my-link-tooltip').addClass('tooltip').text(content);
+        }, function(){
+          $('div#-my-link-tooltip').removeClass('tooltip').empty();
+        });
+      });
+    </script>
+  </body>
 </html>
