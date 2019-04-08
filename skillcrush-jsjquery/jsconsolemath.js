@@ -1,4 +1,4 @@
-var magazineSubscriptions = 7;
-var avgYearlyPayment = 19;
+var magazineSubscriptions = 7;
+var avgYearlyPayment = 19;
 var whatISpendOnMagazines = magazineSubscriptions * avgYearlyPayment;
-console.log(whatISpendOnMagazines);
+console.log(whatISpendOnMagazines);
