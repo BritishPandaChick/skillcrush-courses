@@ -1,84 +1,85 @@
+/* Basic Styles */
 body {
-	background: powderblue;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
 }
 
-
-header {
-    background: url('http://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/03/seamless-pattern-green-150.png');
-    margin: 10px;
-    padding: 20px;
+.full-width {
+  width: 100%;
+  margin: 0 auto;
 }
 
-
- main {
-    border: 2px solid #DA70D6;
+/* One */
+#one {
+  height: 500px;
 }
 
-
-.main-section {
-    color: red;
-    font-size: 28px;
-    font-family: 'Wisdom Script AI';
+#one .full-width {
+  padding: 20px 0;
 }
 
-
-h1 {
-    color: #2F4F4F;
-    font-family: Arial;
-    font-size: 55px;
+#one h1 {
+  font-size: 52px;
+  text-align: center;
 }
 
-
-section {
-    height: 300px;
-    background: yellow;
+#one h2 {
+  font-size: 42px;
 }
 
-
-.section-one {
-    float: right;
+#one span {
+  color: red;
+  font-weight: bold;
 }
 
-
-#section1-headline {
-    background: #556B2F;
-    font-size: 35px;
-    font-family: 'Bitter', serif;
-    color: #F8F8FF;
+#one p {
+  font-size: 20px;
+  padding-left: 50px;
 }
 
-
-ol li {
-    font-size: 15px;
-    font-family: Georgia;
+/* Two */
+#two {
+  height: 400px;
 }
 
-
-ul {
-    border: 2px orange dashed;
+#two .full-width {
+  padding: 20px 0;
 }
 
-
-ul li {
-    font-size: 15px;
-    font-family: 'Bitter', serif;
+#two h2 {
+  font-size: 42px;
 }
 
-
- p {
-    font-family: 'Wisdom Script AI';
-    font-size: 20px;
+#two p {
+  font-size: 20px;
+  padding-left: 50px;
 }
 
-
-h3 {
-    font-size: 25px;
-    font-family: 'Bitter', serif;
-    color: SeaGreen;
+#two span {
+  color: blue;
+  font-weight: bold;
 }
 
+/* Three */
+#three {
+  height: 400px;
+}
 
-footer {
-    width: 500px;
-    background-color: #FFFFFF;
+#three .full-width {
+  padding: 20px 0;
+}
+
+#three h2 {
+  font-weight: 42px;
+}
+
+#three p {
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+#three span {
+  font-weight: bold;
+  color: green;
+}
 }
