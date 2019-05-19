@@ -1,4 +1,5 @@
 var chair = {};
+
 chair.material;
 chair.legs;
 chair.seat;

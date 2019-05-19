@@ -1,4 +1,5 @@
 var chair = {};
+
 chair.material = "wooden";
 chair.legs = 4;
 chair.seat = "padded";
