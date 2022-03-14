@@ -1,0 +1,84 @@
+/*=== Basic Styles ===*/
+body {
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*=== One ===*/
+#one {
+  height: 500px;
+}
+
+#one .full-width {
+  padding: 20px 0;
+}
+
+#one h1 {
+  font-size: 52px;
+  text-align: center;
+}
+
+#one h2 {
+  font-size: 42px;
+}
+
+#one span {
+  color: red;
+  font-weight: bold;
+}
+
+#one p {
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+/*=== Two ===*/
+#two {
+  height: 400px;
+}
+
+#two .full-width {
+  padding: 20px 0;
+}
+
+#two h2 {
+  font-size: 42px;
+}
+
+#two p {
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+#two span {
+  color: blue;
+  font-weight: bold;
+}
+
+/*=== Three ===*/
+#three {
+  height: 400px;
+}
+
+#three .full-width {
+  padding: 20px 0;
+}
+
+#three h2 {
+  font-weight: 42px;
+}
+
+#three p {
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+#three span {
+  font-weight: bold;
+  color: green;
+}

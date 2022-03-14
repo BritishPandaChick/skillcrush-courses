@@ -1,29 +1,0 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Skillcrush 102-Add animation to your tooptip" />
-    <title>Add animation to your tooltip</title>
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>	<style>      .tooltip {        margin: 10px;        padding: 10px;        -webkit-border-radius: 3px;        -moz-border-radius: 3px;        border-radius: 3px;        color: white;        background-color: black;        position: absolute;        z-index: 2;      }    </style>
-  </head>
-  <body>
-    <a href="#" id="my-link" title="Woot! You wrote your first hover event!">Hover
-      over me!</a>
-    <div id="my-link-tooltip"></div>
-    <script>
-      $(document).ready(function() {
-        $('#my-link').click(function(event) {
-          event.preventDefault();
-        });
-        $('#my-link-tooltip').fadeIn('slow');
-        $('#my-link-tooltip').fadeOut('fast'); //write your hover event here!
-        $('#my-link').hover(function() {
-          var content = $(this).attr('title');
-          $('div#my-linkk-tooltip').addClass('tooltip').text(content);
-        }, function() {
-          $('div#my-link-tooltip').removeClass('tooltip').empty();
-        });
-     });
-   </script>
-  </body>
- </html>

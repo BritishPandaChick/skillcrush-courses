@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Clear and Overflow property</title>
+
+		<!-- Stylesheet -->
+		<style>
+			#parent-div {
+				background: #FFB33D;
+				overflow:auto;
+			}
+
+			#first-div {
+				border: 5px solid #4593FE;
+				float: left;
+				width: 200px;
+				height: 100px;
+			}
+
+			#second-div {
+				border: 5px solid #09CDA1;
+				float: right;
+				width: 200px;
+				height: 100px;
+			}
+
+			#third-div {
+				background: #FF605F;
+				margin-bottom: 50px;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="parent-div">
+			<p>This div rules them all.</p>
+
+			<div id="first-div">First div</div>
+
+			<div id="second-div">Second div</div>
+			
+			<div id="third-div">
+				<p>Third div.</p>
+				<p>This paragraph is floated within a parent element that isn't floated.
+					Notice the overflow? Vivamus sagittis lacus vel augue laoreet rutrum
+					faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor
+					mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			</div>
+		</div>	
+	</body>
+</html>

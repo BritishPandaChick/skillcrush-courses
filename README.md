@@ -1,8 +1,14 @@
 # Skillcrush Courses
-Skillcrush projects and coursework from Web Designer Blueprint. Uses HTML, CSS, JavaScript, and jQuery.
+Skillcrush projects and coursework from Web Designer Blueprint. 
+
+## Depencencies 
+* HTML
+* CSS
+* JavaScript
+* jQuery
 
 ## Contributing
-This repository is based on a design created by Skillcrush. Therefore I will not be accepting any pull requests.
+This repository is based designs created by Skillcrush. Therefore I will not be accepting any pull requests.
 
 ## Acknowledgements
 * Skillcrush
