@@ -8,21 +8,34 @@
   <body>
     <h1>CowSay What?</h1>
     <button id="cowsay-run">Say it, cow!</button>
-    <pre>      ----------------------------------------
-      <span id="cowsay-output"></span>
-      ----------------------------------------
-      \  ^__^
-      \  (oo)\________
-         (__)\    )\/\
-              ||----w |
-              ||     ||
+    <pre>
+      ----------------------------------------
+
+      <span id="cowsay-output"></span>
+
+      ----------------------------------------
+
+      \  ^__^
+
+      \  (oo)\________
+
+         (__)\    )\/\
+
+              ||----w |
+
+              ||     ||
+
     </pre>
+
+    <!-- JavaScript -->
     <script>
       var cowsayRun = document.getElementById("cowsay-run");
-      var cowsayOutput = document.getElementById("cowsay-output");
+      var cowsayOutput = document.getElementById("cowsay-output");
+
       cowsayRun.addEventListener("click", function(input) {
         var inputText = prompt("What should the cow say?");
-        var lastCharacter = inputText.charAt(inputText.length - 1);
+        var lastCharacter = inputText.charAt(inputText.length - 1);
+
         if (lastCharacter === "?") {
           cowsayOutput.innerText = "moo I don't know.";
         } else if (lastCharacter === "!") {
@@ -33,4 +46,5 @@
       });
     </script>
   </body>
-</html>
+</html>
+

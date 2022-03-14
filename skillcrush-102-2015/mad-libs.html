@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <meta name="description" content="Skillcrush 102-Mad Libs" />
     <title>Mad Libs</title>
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>	<style>      div#limerick {        display: none;      }    </style>
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Stylesheet -->
+	  <style>
+      div#limerick {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <form id="limerick-form">
@@ -13,13 +22,16 @@
       <p>Enter a number: <input type="text" name="number-one" id="number-one" /></p>
       <p>Enter another verb: <input type="text" name="verb-two" id="verb-two" /></p>
       <input type="submit" name="submit" value="Gimme a mad lib!" />
-    </form>
+    </form>
+
     <div id="limerick">
       <p>There was an Old Man with a <span id="noun-one-new"></span>,</p>
       <p>Who said, "It is just as I <span id="verb-one-new"></span>!"</p>
       <p>Two Owls and a Hen, <span id="number-one-new"></span> Larks and a Wren,</p>
       <p>Have all <span id="verb-two-new"></span> their nests in my beard.</p>
-    </div>
+    </div>
+
+    <!-- JavaScript -->
     <script>
       $(document).ready(function(){
         $('#limerick-form').submit(function(e){
@@ -27,11 +39,13 @@
           var nounOne = $('input#noun-one').val();
           var verbOne = $('input#verb-one').val();
           var numberOne = $('input#number-one').val();
-          var verbTwo = $('input#verb-two').val();
+          var verbTwo = $('input#verb-two').val();
+
           $('span#noun-one-new').text(nounOne);
           $('span#verb-one-new').text(verbOne);
           $('span#number-one-new').text(numberOne);
-          $('span#verb-two-new').text(verbTwo);
+          $('span#verb-two-new').text(verbTwo);
+
           $('form#limerick-form').fadeOut('fast', function(){
             $('div#limerick').show();
           });
@@ -39,4 +53,5 @@
        });
     </script>
   </body>
-</html>
+</html>
+

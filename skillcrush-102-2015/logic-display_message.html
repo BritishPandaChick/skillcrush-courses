@@ -10,16 +10,21 @@
     <h2>Answer: <span id="answer"></span></h2>
     <p><span id="message"></span></p>
 
+    <!-- JavaScript -->
     <script>
       var question = 'Do you love pandas?';
       var answer = prompt(question);
-      var message = checkAnswer(answer);	  
+      var message = checkAnswer(answer);
+	  
       var questionElem = document.getElementById('question');
-      questionElem.innerHTML = question;
+      questionElem.innerHTML = question;
+
       var answerElem = document.getElementById('answer');
-      answerElem.innerHTML = answer;
+      answerElem.innerHTML = answer;
+
       var messageElem = document.getElementById('message');
-      messageElem.innerHTML = message;
+      messageElem.innerHTML = message;
+
       function checkAnswer(answer) {
         if (answer.toLowerCase() == 'yes') {
           return 'Yay! Pandas are the best!';
@@ -28,4 +33,6 @@
         }
       }
     </script>
-   </body></html>
+   </body>
+</html>
+

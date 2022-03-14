@@ -19,7 +19,9 @@
       plan. Make small steps, like adding a salad (full of different color vegetables)
       to your diet once a day or switching from butter to olive oil when cooking.</p>
     <p>As yours small changes become habit, you can continue to add more healthy
-      choices to your diet.</p>
+      choices to your diet.</p>
+
+    <!-- JavaScript -->
     <script>
       $('body p').each(function(key, value) {
         $(this).delay(key * 1000).fadeIn(2000);
@@ -43,16 +45,22 @@
         }
       };
 
-      var list = '<ul>';
+      var list = '<ul>';
+
       $.each(meals, function(key, value){
-        list = list + '<li>' + key + '<ul>';
+        list = list + '<li>' + key + '<ul>';
+
         $.each(value, function(key2, value2){
           list = list + '<li>' + value2 + ': ' + '</li>';
-        });
+        });
+
         list = list + '</ul></li>';
-      });
-      list = list + '</ul>';
+      });
+
+      list = list + '</ul>';
+
       $('body').append('<h3>My Meals Today</h3>' + list);
     </script>
   </body>
-</html>
+</html>
+
